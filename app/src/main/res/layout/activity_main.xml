@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/one_show"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/gravity_backgraunt"
+        android:visibility="visible"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/menu_backgraunt"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/lets_play"
+            android:layout_width="184dp"
+            android:layout_height="48dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="2dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            app:cardBackgroundColor="@color/white"
+            >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lines="1"
+            android:text="Let's play"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            />
+        </androidx.cardview.widget.CardView>
+
+
+
+    </FrameLayout>
+
+</LinearLayout>
